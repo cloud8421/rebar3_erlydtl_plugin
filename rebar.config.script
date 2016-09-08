@@ -34,9 +34,7 @@ NewCfg = case application:get_key(syntax_tools, vsn) of
          {overrides, Overrides},
          {erl_opts, [{d, 'MERL_DEP'}]}];
     _ ->
-        [{deps, [{erlydtl, "",
-                        {git, "https://github.com/erlydtl/erlydtl.git",
-                         {branch, "master"}}}]}]
+        [{deps, [{erlydtl, "0.11.1"}]}]
 end,
 
 lists:foldl(
